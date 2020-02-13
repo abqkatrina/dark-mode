@@ -1,11 +1,10 @@
 import React from 'react';
 import useDarkMode from '../hooks/useDarkMode';
 
-const initialValue = Boolean
 
 const Navbar = () => {
 
-  const [darkMode, setDarkMode] = useDarkMode('theme', initialValue)
+  const [darkMode, setDarkMode] = useDarkMode(false);
 
   const toggleMode = e => {
     e.preventDefault();
