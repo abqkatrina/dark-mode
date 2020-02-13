@@ -28,15 +28,15 @@ In this project you'll take this crypto currency tracker app and build two custo
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete by merging the branch back into master.
+- [X] Do your magic!
 
 ## Minimum Viable Product
 
-- [ ] Build a custom hook that lets you save data to localStorage
-- [ ] Build a second custom hook that sets the `dark-mode` class on the body element
+- [X] Build a custom hook that lets you save data to localStorage
+- [X] Build a second custom hook that sets the `dark-mode` class on the body element
 - [ ] Compose your two new hooks together to be able to set and persist your user's dark mode preference in your app
 <!--
 - [ ] Write tests that use mocks and spies to handle dependencies in your components
@@ -104,14 +104,14 @@ We're going to use this inside our dark mode hook, but this can be used anywhere
 - [X] Inside the `hooks` directory, add a new file called `useDarkMode`.
 - [X] Build a function called `useDarkMode`.
 - [X] Import `useLocalStorage`
-- Call `useLocalStorage` and pass in the key you want to use to store whether or not dark mode is enabled. Remember, this hook returns an array with a value and a setter in an array, exactly like the state hook, so make sure to capture those values in a `const` - `const [someValue, setSomeValue] = useLocalStorage('your key here')`
-- Now to add the class to the body. If we need to manipulate the DOM directly, how do we do that? Any direct DOM manipulation is considered a side effect, right? So let's use the effect hook.
+- [X] Call `useLocalStorage` and pass in the key you want to use to store whether or not dark mode is useLocalStorage('your key here')`
+- [X] Now to add the class to the body. If we need to manipulate the DOM directly, how do we do that? Any direct DOM manipulation is considered a side effect, right? So let's use the effect hook.
   - [X] Import and set up your effect hook.
   - Inside it, check to see if the value from `useLocalStorage` is true or false.
-  - If it's true, add the class `dark-mode` to the `body` element.
-  - If it's false, remove the class from the `body` element. (If you don't quite remember how to do this from ages and ages ago, Google will be your friend here 😉)
-  - We don't want this effect to run every time anything in the component changes, right? Think about what piece of data this hook depends on, and should be synced with, and add that in its dependency array.
-- Finally, we need to return something out of here so we can use this in our app. What do you think we'll need? We'll need to know if dark mode is enabled, right? And we'll need a setter function to toggle dark mode. Let's just forward the value and the setter that were returned out of the `useLocalStorage` call. Return those two values in an array as well.
+  - [X] If it's true, add the class `dark-mode` to the `body` element.
+  - [X] If it's false, remove the class from the `body` element. (If you don't quite remember how to do this from ages and ages ago, Google will be your friend here 😉)
+  -[X] We don't want this effect to run every time anything in the component changes, right? Think about what piece of data this hook depends on, and should be synced with, and add that in its dependency array.
+- [X]Finally, we need to return something out of here so we can use this in our app. What do you think we'll need? We'll need to know if dark mode is enabled, right? And we'll need a setter function to toggle dark mode. Let's just forward the value and the setter that were returned out of the `useLocalStorage` call. Return those two values in an array as well.
 
 ## STEP 3 - Using the hook in a component
 
@@ -130,4 +130,4 @@ After finishing your required elements, you can push your work further. These go
 
 - Go to the [Coin Gecko API](https://www.coingecko.com/) where we got this data from, and add more features to your app. Maybe you want to make a dropdown list of coins, and only look at one coin at a time. You could make an API call to that API for a specific coin and get more data on it. You could get more specific coin data for the last 24 hrs. There's a lot you can do with this API. Explore and have fun!
 
-- Look into the recharts library and build a new chart. Or change the appearence of the charts we built out here. Maybe when you toggle to dark mode, the line on the chart could change colors! There's a lot you can do with this library. Explore and have fun!
+- [X] Look into the recharts library and build a new chart. Or change the appearence of the charts we built out here. Maybe when you toggle to dark mode, the line on the chart could change colors! There's a lot you can do with this library. Explore and have fun!

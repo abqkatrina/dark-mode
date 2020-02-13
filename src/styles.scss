@@ -181,7 +181,7 @@ img {
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: lightpink;
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -190,7 +190,7 @@ img {
 }
 
 .toggle {
-  background: #f68819;
+  background: hotpink;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -250,4 +250,13 @@ text-align: left;
     background-color: #1F2022;
     border: none;
   }
+}
+
+.recharts-line, .recharts-curve, .recharts-line-curve {
+  stroke: hotpink;
+}
+
+.recharts-cartesian-axis-line {
+  stroke: darkmagenta;
+  width: 80;
 }
